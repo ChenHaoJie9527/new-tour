@@ -7,8 +7,9 @@ import App from './App.vue'
 
 // const result2 = objToArr(test1);
 // console.log(result2)
+import Animate from  "animate.css";
 Vue.config.productionTip = false
-
+Vue.use(Animate);
 new Vue({
   render: h => h(App),
 }).$mount('#app')
