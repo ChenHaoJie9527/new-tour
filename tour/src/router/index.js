@@ -1,7 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "../pages/home/Home.vue";
-import List from "../pages/list/List.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -9,14 +7,9 @@ export default new Router({
         {
             path: "/",
             name: "Home",
-            component: Home,
+            component: ()=> import("../pages/home/Home.vue"),
         },
-        {
-            path: "/list",
-            name: "List",
-            component: List,
-        }
     ],
     mode: "history",
     base: process.env.BASE_URL
-})
+})  
