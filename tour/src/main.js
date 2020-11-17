@@ -5,6 +5,7 @@ import router from "./router/index";
 import "./assets/styles/reset.css";
 import "./assets/styles/border.css";
 import fastClick from "fastclick";
+
 Vue.config.productionTip = false
 Vue.use(Animate);
 fastClick.attach(document.body);
