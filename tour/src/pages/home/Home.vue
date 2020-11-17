@@ -6,7 +6,8 @@
 </template>
 
 <script>
-import ld from "lodash";
+// import ld from "lodash";
+import { useDebounce } from "../../hooks/useDebounce";
 export default {
   name: "page-home",
   data() {
@@ -20,8 +21,9 @@ export default {
     // const n2 = 10.0; // 小数点后面是零，当成整数 10 处理
     // Number() parseInt() parseFloat()
     // console.log(parseInt(".1"));
-    this._DB = ld.debounce(this.handClickBtn,1000,false);
-    console.log(ld);
+    // this._DB = ld.debounce(this.handClickBtn, 1000, false);
+    // console.log(ld);
+    this._DB = useDebounce(this.handClickBtn);
   },
   methods: {
     handClickBtn() {
@@ -30,7 +32,7 @@ export default {
     },
     _debounce() {
       console.log(`_debounce.....`);
-      this._DB()
+      this._DB();
     },
   },
 };
