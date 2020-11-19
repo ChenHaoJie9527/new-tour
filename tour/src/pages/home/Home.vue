@@ -1,10 +1,5 @@
 <template>
   <div class="home">
-    <div>{{ val }}</div>
-    <button @click.prevent="_debounce">点击</button>
-    <ul>
-      <li>{{ propsName[0] }}</li>
-    </ul>
   </div>
 </template>
 
@@ -19,7 +14,10 @@ export default {
       propsName: "",
     };
   },
+  component: {
+  },
   created() {
+    this._DB = useDebounce(this.handClickBtn);
     // console.log(Boolean(NaN));
     // const n1 = 1; // 小数点后面没有数字，当成整数 1 处理
     // const n2 = 10.0; // 小数点后面是零，当成整数 10 处理
@@ -27,7 +25,6 @@ export default {
     // console.log(parseInt(".1"));
     // this._DB = ld.debounce(this.handClickBtn, 1000, false);
     // console.log(ld);
-    this._DB = useDebounce(this.handClickBtn);
     // 逻辑非 ! 先转换成布尔值再取反，相当于先调用Boolead函数再取反
     // console.log(!123123);
     // 双叹号 !! 相当于转换成布尔值，在取反的取反，也就是调用Boolead函数进行转换成布尔值

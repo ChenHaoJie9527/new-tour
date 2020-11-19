@@ -31,23 +31,23 @@ const res = getDataValueBykeyStr(data, "y");
 console.log(res);
 
 
-function UserException(message) {
-    this.message = message;
-    this.name = "UserException";
-}
-UserException.prototype.toString = () => {
-    return this.name + ":" + this.message + "''";
-}
-function func(){
-    try {
-        throw new UserException("Value too high");
-    } catch (error) {
-        // console.log(error); //UserException实例
-        if(error instanceof UserException){
-            throw error;
-        }else {
-            throw error;
-        }
-    }
-}
-func();
+// function UserException(message) {
+//     this.message = message;
+//     this.name = "UserException";
+// }
+// UserException.prototype.toString = () => {
+//     return this.name + ":" + this.message + "''";
+// }
+// function func(){
+//     try {
+//         throw new UserException("Value too high");
+//     } catch (error) {
+//         // console.log(error); //UserException实例
+//         if(error instanceof UserException){
+//             throw error;
+//         }else {
+//             throw error;
+//         }
+//     }
+// }
+// func();
