@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import Animate from "animate.css";
 import router from "./router/index";
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css'; 
 import "./assets/styles/reset.css";
 import "./assets/styles/border.css";
 import "./assets/styles/iconfont.css";
@@ -10,6 +12,7 @@ import "./assets/styles/iconfont.css";
 // import "./hooks/useGetArray";
 Vue.config.productionTip = false
 Vue.use(Animate);
+Vue.use(VueAwesomeSwiper);
 // fastClick.attach(document.body);
 new Vue({
   router,

@@ -1,11 +1,13 @@
 <template>
   <div class="home">
+    <Swiper></Swiper>
   </div>
 </template>
 
 <script>
 // import ld from "lodash";
 import { useDebounce } from "../../hooks/useDebounce";
+import Swiper from "../../components/Swiper";
 export default {
   name: "page-home",
   data() {
@@ -14,7 +16,8 @@ export default {
       propsName: "",
     };
   },
-  component: {
+  components: {
+    Swiper,
   },
   created() {
     this._DB = useDebounce(this.handClickBtn);
@@ -47,7 +50,7 @@ export default {
     //     console.log("str is not string");
     //   break;
     // }
-  
+
     // function setName(obj) {
     //   obj.name = "nickName";
     //   obj = new Object();
