@@ -11,8 +11,11 @@
     "animate.css": "^3.7.2",
     "core-js": "^3.6.5",
     "fastclick": "^1.0.6",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
     "lodash": "^4.17.20",
     "vue": "^2.6.11",
+    "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.4.9"
   },
   "devDependencies": {
