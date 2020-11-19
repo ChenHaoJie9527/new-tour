@@ -50,4 +50,31 @@ export const useArrDifference = (arr = [], oldArr) => {
 }
 const res = useArrDifference([1, 3, 4, 2, 5, 6], arr1);
 console.log(res)
+let i = 11;
+do {
+    i += 1;
+    console.log(i) //先执行
+} while (i < 10);
+
+let j = 11;
+while (j < 10) {
+    j++;
+    console.log(j) // 不会执行
+}
+let s = "Nicholas";
+let b = true;
+let k = 22;
+let u;
+let n = null;
+let o = new Object();
+let regexp = /^\d{15,17}$/;
+console.log(typeof s); // string 
+console.log(typeof k); // number 
+console.log(typeof b); // boolean 
+console.log(typeof u); // undefined 
+console.log(typeof n); // object 
+console.log(typeof o); // object
+console.log(typeof regexp); // object
+// console.log(regexp instanceof Object);
+
 
