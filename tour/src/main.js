@@ -10,6 +10,7 @@ import "./assets/styles/iconfont.css";
 // import fastClick from "fastclick";
 // import "./hooks/useCompact";
 // import "./hooks/useGetArray";
+import "./hooks/useCloneObject";
 Vue.config.productionTip = false
 Vue.use(Animate);
 Vue.use(VueAwesomeSwiper);
