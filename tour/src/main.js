@@ -11,6 +11,7 @@ import "./assets/styles/iconfont.css";
 // import "./hooks/useCompact";
 // import "./hooks/useGetArray";
 import "./hooks/useCloneObject";
+import "./hooks/useStatus";
 Vue.config.productionTip = false
 Vue.use(Animate);
 Vue.use(VueAwesomeSwiper);
