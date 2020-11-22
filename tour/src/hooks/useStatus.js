@@ -99,18 +99,27 @@
 // onButtonClick("guest", 1)
 
 // 将map对象最为key键
-const actions = new Map([
-    [{ identity: 'guest', status: 1 }, () => { }],
-    [{ identity: 'guest', status: 2 }, () => { }],
-]);
+// const actions = new Map([
+//     [{ identity: 'guest', status: 1 }, () => { }],
+//     [{ identity: 'guest', status: 2 }, () => { }],
+// ]);
 
-function onButtonClick(identity, status) {
-    // [key,value]在循环体中，相当于再一次循环解构
-    let action = [...actions].filter(([key]) => {
-        // console.log(key,value) //key: Map的键 value: key的值
-        return key.identity == identity && key.status == status;
-    });
-    console.log("action", action) //action 返回符合调条件的那一项数组，会按照插值的顺序进行排列，key是0项 value是1项
-    // action.forEach(([key, value]) => value.call(this))
-}
-onButtonClick("guest", 2)
+// function onButtonClick(identity, status) {
+//     // [key,value]在循环体中，相当于再一次循环解构
+//     let action = [...actions].filter(([key]) => {
+//         // console.log(key,value) //key: Map的键 value: key的值
+//         return key.identity == identity && key.status == status;
+//     });
+//     console.log("action", action) //action 返回符合调条件的那一项数组，会按照插值的顺序进行排列，key是0项 value是1项
+//     // action.forEach(([key, value]) => value.call(this))
+// }
+// onButtonClick("guest", 2)
+
+// let patten = new RegExp("\\[bc\\]at","gi");
+// console.log(patten.toString()) //返回正则表达式的字面量表示
+// console.log(patten.toLocaleString());//返回正则表达式的字面量表示
+// console.log(patten.valueOf()) //返回正则表达式本身
+
+// let num = 99;
+// // console.log(num.toFixed(2))
+// console.log(num.toPrecision(4)) // toPrecision 会根据情况返回最合理的输出结果 根据数值和精度来决定调用 toFixed()还是 toExponential()。
