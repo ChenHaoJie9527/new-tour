@@ -42,3 +42,11 @@ const res = deepClone({
     isData,
 });
 console.log(res);
+
+// let text = "cat, bat, sat, fat";
+// let pattern = /.at/;
+// // 等价于 pattern.exec(text) 
+// let matches = text.match(pattern);
+// console.log(matches); // 0 
+// // console.log(matches[0]); // "cat" 
+// // console.log(pattern.lastIndex); // 0

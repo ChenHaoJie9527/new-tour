@@ -7,6 +7,6 @@ export const arrToObj = (arr = []) => {
     }, {})
 }
 
-export const objToArr = (obj = {})=>{
+export const objToArr = (obj = {}) => {
     return Object.keys(obj).map(key => obj[key])
 }

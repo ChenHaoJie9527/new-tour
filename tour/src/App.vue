@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <Header></Header>
-     <router-view />
-    <Footer></Footer>
+    <router-view />
+    <Footer>
+      <template #default="{foo}">
+        <h2>You are {{ foo.id }}</h2>
+      </template>
+    </Footer>
   </div>
 </template>
 
