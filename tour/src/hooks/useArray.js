@@ -49,6 +49,6 @@
 // };
 // console.log(Array.prototype.slice.call(a1));
 // console.log(Array.of(a1));
-const arr = [1,2,3];
+// const arr = [1,2,3];
 // console.log(Object.prototype.toString.call(arr) === "[object Array]");
 // console.log(Array.isArray(arr));
