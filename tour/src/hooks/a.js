@@ -35,5 +35,10 @@
 // }
 // console.log(res);
 
-const arr1 = [1,2,3,4,5];
-console.log(arr1.reverse());
+// const arr1 = [1,2,3,4,5];
+// console.log(arr1.reverse());
+const obj1 = {
+    id: 1,
+    name: "chen"
+};
+console.log(obj1);
