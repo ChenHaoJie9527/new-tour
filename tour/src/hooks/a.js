@@ -37,6 +37,3 @@
 
 // const arr1 = [1,2,3,4,5];
 // console.log(arr1.reverse());
-console.log("小红要上传代码了!!!!");
-console.log("123123");
-console.log("红红12312")
