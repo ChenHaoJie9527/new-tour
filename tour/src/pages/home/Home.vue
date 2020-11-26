@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Swiper></Swiper>
+    <list :list="list"></list>
   </div>
 </template>
 
@@ -8,16 +9,35 @@
 // import ld from "lodash";
 import { useDebounce } from "../../hooks/useDebounce";
 import Swiper from "../../components/Swiper";
+import list from "../../components/list";
 export default {
   name: "page-home",
   data() {
     return {
       val: "0",
       propsName: "",
+      list: [
+        {
+          id: 0,
+          name: "chj",
+          age: 10,
+        },
+        {
+          id: 1,
+          name: "szg",
+          age: 11,
+        },
+        {
+          id: 2,
+          name: "lil",
+          age: 12,
+        },
+      ],
     };
   },
   components: {
     Swiper,
+    list
   },
   created() {
     this._DB = useDebounce(this.handClickBtn);
