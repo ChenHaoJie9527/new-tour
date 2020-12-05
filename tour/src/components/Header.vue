@@ -23,28 +23,32 @@ export default {
 <style lang="less">
 @import "../assets/styles/varible.les";
 .header {
-  height: 0.86rem;
+  width: 750px;
+  height: 90px;
   display: flex;
   align-items: center;
   background: @bgColor;
   color: #fff;
   .header-left {
-    width: 0.64rem;
+    width: 50px;
     text-align: center;
-    margin-left: 0.1rem;
+    margin-left: 10px;
+    i{
+      font-size: 20px;
+    }
   }
   .header-input {
     flex: 1;
     background: #fff;
-    border-radius: 0.1rem;
-    height: 0.64rem;
-    margin-left: 0.1rem;
+    border-radius: 10px;
+    height: 60px;
+    margin-left: 10px;
     color: #ccc;
-    line-height: 0.64rem;
-    text-indent: 0.1rem;
+    line-height: 60px;
+    text-indent: 10px;
   }
   .header-right {
-    width: 1.24rem;
+    width: 100px;
     text-align: center;
   }
 }
