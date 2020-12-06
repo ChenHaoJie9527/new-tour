@@ -1,15 +1,15 @@
 <template>
   <div class="home">
-    <Swiper></Swiper>
-    <list :list="list"></list>
+    <!-- <Swiper></Swiper> -->
+    <!-- <list :list="list"></list> -->
   </div>
 </template>
 
 <script>
 // import ld from "lodash";
-import { useDebounce } from "../../hooks/useDebounce";
-import Swiper from "../../components/Swiper";
-import list from "../../components/list";
+// import { useDebounce } from "../../hooks/useDebounce";
+// import Swiper from "../../components/Swiper";
+// import list from "../../components/list";
 export default {
   name: "page-home",
   data() {
@@ -36,11 +36,11 @@ export default {
     };
   },
   components: {
-    Swiper,
-    list
+    // Swiper,
+    // list
   },
   created() {
-    this._DB = useDebounce(this.handClickBtn);
+    // this._DB = useDebounce(this.handClickBtn);
     // console.log(Boolean(NaN));
     // const n1 = 1; // 小数点后面没有数字，当成整数 1 处理
     // const n2 = 10.0; // 小数点后面是零，当成整数 10 处理

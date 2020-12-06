@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <!-- <Header></Header> -->
     <router-view />
-    <Footer>
+    <!-- <Footer>
       <template #default="{ foo }">
         <h2>You are {{ foo.id }}</h2>
       </template>
-    </Footer>
-    <div class="test-viewport">测试转换</div>
-    <Button type="primary">点击</Button>
-    <Tabs v-model="active">
+    </Footer> -->
+    <!-- <div class="test-viewport">测试转换</div> -->
+    <!-- <Button type="primary">点击</Button> -->
+    <!-- <Tabs v-model="active">
       <Tab title="标签 1">内容 1</Tab>
       <Tab title="标签 2">内容 2</Tab>
       <Tab title="标签 3">内容 3</Tab>
       <Tab title="标签 4">内容 4</Tab>
-    </Tabs>
-    <div class="imgs-dpr"></div>
+    </Tabs> -->
+    <!-- <div class="imgs-dpr"></div> -->
 
-    <div class="box">
+    <!-- <div class="box">
       <img
         alt=""
         srcset="
@@ -26,23 +26,22 @@
           ./assets/image/banners/jn.jpg
         "
       />
-      asd123123easdasdasasdasd
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { Button, Tab, Tabs } from "vant";
+// import Header from "./components/Header";
+// import Footer from "./components/Footer";
+// import { Button, Tab, Tabs } from "vant";
 export default {
   name: "App",
   components: {
-    Header,
-    Footer,
-    Button,
-    Tab,
-    Tabs,
+    // Header,
+    // Footer,
+    // Button,
+    // Tab,
+    // Tabs,
   },
   data() {
     return {
