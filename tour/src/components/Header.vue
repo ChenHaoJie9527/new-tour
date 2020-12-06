@@ -21,19 +21,21 @@ export default {
 </script>
 
 <style lang="less">
-@import "../assets/styles/varible.les";
+@import "../assets/styles/varible.less";
+@import "../assets/styles/mixin.less";
 .header {
   width: 750px;
   height: 90px;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  .flex();
   background: @bgColor;
   color: #fff;
   .header-left {
     width: 50px;
     text-align: center;
     margin-left: 10px;
-    i{
+    i {
       font-size: 20px;
     }
   }
@@ -50,6 +52,14 @@ export default {
   .header-right {
     width: 100px;
     text-align: center;
+    span {
+      color: red;
+      &:after {
+        content: "123123";
+        font-size: 20px;
+        color: blue;
+      }
+    }
   }
 }
 </style>

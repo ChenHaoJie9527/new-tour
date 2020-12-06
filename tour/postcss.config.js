@@ -20,7 +20,7 @@ module.exports = ({ file }) => {
                 minPixelValue: 1, // (Number) 设置最小的转换数值，如果为1的话，只有大于1的值会被转换
                 mediaQuery: false, // (Boolean) 媒体查询里的单位是否需要转换单位
                 clude: [/^node_modules$/],// (Array or Regexp) 忽略某些文件夹下的文件或特定文件，例如 'node_modules' 下的文件
-                //include：/\/src\/mobile\//  
+                // include：/\/src\/mobile\,s//  
                 /*(Array or Regexp) 如果设置了include，那将只有匹配到的文件才会被转换，例如只转换 'src/mobile' 下的文件
                 如果值是一个正则表达式，将包含匹配的文件，否则将排除该文件
                 如果传入的值是一个数组，那么数组里的值必须为正则
