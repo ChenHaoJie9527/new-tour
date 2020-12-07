@@ -2,6 +2,9 @@
   <div class="home">
     <!-- <Swiper></Swiper> -->
     <!-- <list :list="list"></list> -->
+    <Skeleton title  avatar :row="10" :loading="loading">
+      <div>12312312321</div>
+    </Skeleton>
   </div>
 </template>
 
@@ -10,6 +13,7 @@
 // import { useDebounce } from "../../hooks/useDebounce";
 // import Swiper from "../../components/Swiper";
 // import list from "../../components/list";
+import { Skeleton } from "vant";
 export default {
   name: "page-home",
   data() {
@@ -33,11 +37,13 @@ export default {
           age: 12,
         },
       ],
+      loading: true,
     };
   },
   components: {
     // Swiper,
     // list
+    Skeleton,
   },
   created() {
     // this._DB = useDebounce(this.handClickBtn);
@@ -70,7 +76,6 @@ export default {
     //     console.log("str is not string");
     //   break;
     // }
-
     // function setName(obj) {
     //   obj.name = "nickName";
     //   obj = new Object();
@@ -93,5 +98,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less" scoped>
+/deep/ .van-skeleton{
+  flex-direction: column;
+};
+/deep/ .van-skeleton__avatar {
+  width: 400px;
+  height: 400px;
+  // background: pink;
+  border-radius: initial;
+}
 </style>
