@@ -2,9 +2,11 @@
   <div class="home">
     <!-- <Swiper></Swiper> -->
     <!-- <list :list="list"></list> -->
-    <Skeleton title  avatar :row="10" :loading="loading">
+    <!-- <Skeleton title  avatar :row="10" :loading="loading">
       <div>12312312321</div>
-    </Skeleton>
+    </Skeleton> -->
+    <!-- <div class="svgImg"></div> -->
+    <svg-icon iconClass="housing-bg"/>
   </div>
 </template>
 
@@ -13,7 +15,7 @@
 // import { useDebounce } from "../../hooks/useDebounce";
 // import Swiper from "../../components/Swiper";
 // import list from "../../components/list";
-import { Skeleton } from "vant";
+// import { Skeleton } from "vant";
 export default {
   name: "page-home",
   data() {
@@ -43,7 +45,7 @@ export default {
   components: {
     // Swiper,
     // list
-    Skeleton,
+    // Skeleton,
   },
   created() {
     // this._DB = useDebounce(this.handClickBtn);
@@ -99,9 +101,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
-/deep/ .van-skeleton{
+.svgImg {
+  width: 200px;
+  height: 200px;
+  background: url("../../icons/svg/ordinary-bg.svg") no-repeat center;
+  background-size: contain;
+}
+/deep/ .van-skeleton {
   flex-direction: column;
-};
+}
 /deep/ .van-skeleton__avatar {
   width: 400px;
   height: 400px;

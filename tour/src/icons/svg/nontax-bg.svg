@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="630px" height="180px" viewBox="0 0 630 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <defs>
+        <linearGradient x1="56.7301522%" y1="50%" x2="116.085405%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E8FAFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="13" y="13" width="600" height="150" rx="8"></rect>
+        <filter x="-3.6%" y="-14.3%" width="107.8%" height="131.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M56.3334247,31.5196093 C56.3334247,33.5169307 58.2056885,35.1360796 60.5152429,35.1360796 C62.8247973,35.1360796 64.697061,33.5169307 64.697061,31.5196093 C64.697061,31.3434566 64.6824981,31.1702455 64.6543566,31.0008272 L65.9804246,31.0014045 C69.3049443,31.0014045 72,33.6964602 72,37.0209799 L72,55.9801465 C72,59.3046662 69.3049443,61.9997219 65.9804246,61.9997219 L64.2720444,61.9990018 C63.9995056,60.2295978 62.2476044,58.8646176 60.1270571,58.8646176 C58.0065097,58.8646176 56.2546085,60.2295978 55.9820697,61.9990018 L55.0195754,61.9997219 C51.6950557,61.9997219 49,59.3046662 49,55.9801465 L49,37.0209799 C49,33.6964602 51.6950557,31.0014045 55.0195754,31.0014045 L56.3761292,31.0008272 C56.3479876,31.1702455 56.3334247,31.3434566 56.3334247,31.5196093 Z" id="path-4"></path>
+        <linearGradient x1="79.3673218%" y1="15.0574751%" x2="19.7697199%" y2="88.5696668%" id="linearGradient-6">
+            <stop stop-color="#707FFF" offset="0%"></stop>
+            <stop stop-color="#6297FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="缴费通" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-62.000000, -763.000000)">
+            <g id="非税缴费" transform="translate(62.000000, 763.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="编组-2" transform="translate(510.000000, 55.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="形状结合" fill="#BBCBFE" transform="translate(60.500000, 46.500000) rotate(25.000000) translate(-60.500000, -46.500000) " xlink:href="#path-4"></use>
+                    <path d="M22.7586207,1.03157743 C22.7586207,5.01836288 26.0006966,8.25029105 30,8.25029105 C33.9993034,8.25029105 37.2413793,5.01836288 37.2413793,1.03157743 C37.2413793,0.681332554 37.2163574,0.336913569 37.1679983,-4.71844785e-15 L44.5651914,0.000332631587 C53.0896008,0.000332631587 60,6.91073185 60,15.4351413 L60,50.5651914 C60,59.0896008 53.0896008,66 44.5651914,66 L37.2413792,66.0010003 C37.2413793,66.0006669 37.2413793,66.0003335 37.2413793,66 C37.2413793,62.0132146 33.9993034,58.7812864 30,58.7812864 C26.0006966,58.7812864 22.7586207,62.0132146 22.7586207,66 L22.758,66 L15.4348086,66 C6.91039922,66 2.82029591e-15,59.0896008 0,50.5651914 L0,15.4351413 C7.32417767e-16,6.91073185 6.91039922,0.000332631587 15.4348086,0.000332631587 L22.8320017,-4.88498131e-15 C22.7836426,0.336913569 22.7586207,0.681332554 22.7586207,1.03157743 Z" id="形状结合" fill-opacity="0.9" fill="url(#linearGradient-6)"></path>
+                    <text id="税" font-family="PangMenZhengDao" font-size="28.8116428" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="18" y="48">税</tspan>
+                    </text>
+                    <line x1="4" y1="18" x2="62" y2="18" id="直线-2" stroke="#FFFFFF" stroke-width="1.54348086" stroke-linecap="square" stroke-dasharray="4.115948973270478"></line>
+                </g>
+                <text font-family="PingFangSC-Regular, PingFang SC" font-size="36" font-weight="normal" fill="#333333">
+                    <tspan x="43" y="76">非税缴费</tspan>
+                </text>
+                <text id="便捷、安全、放心" font-family="PingFangSC-Regular, PingFang SC" font-size="24" font-weight="normal" fill="#999999">
+                    <tspan x="43" y="120">便捷、安全、放心</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
