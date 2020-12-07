@@ -6,7 +6,7 @@
       <div>12312312321</div>
     </Skeleton> -->
     <!-- <div class="svgImg"></div> -->
-    <svg-icon iconClass="housing-bg"/>
+    <svg-icon iconClass="housing-bg" wd="700px" hg="800px"/>
   </div>
 </template>
 
