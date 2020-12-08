@@ -7,13 +7,14 @@ import 'swiper/dist/css/swiper.css';
 import "./assets/styles/reset.css";
 import "./assets/styles/border.css";
 import "./assets/styles/iconfont.css";
+import "@/icons";
 // import fastClick from "fastclick";
 // import "./hooks/useCompact"; 13570968741
 // import "./hooks/useGetArray";
 // import "./hooks/useCloneObject";
 // import "./hooks/useStatus";
 // import "./hooks/useArray";
-import "./hooks/a";
+// import "./hooks/a";
 Vue.config.productionTip = false
 Vue.use(Animate);
 Vue.use(VueAwesomeSwiper);

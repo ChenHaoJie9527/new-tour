@@ -1,26 +1,54 @@
 <template>
   <div class="home">
-    <Swiper></Swiper>
+    <!-- <Swiper></Swiper> -->
+    <!-- <list :list="list"></list> -->
+    <!-- <Skeleton title  avatar :row="10" :loading="loading">
+      <div>12312312321</div>
+    </Skeleton> -->
+    <!-- <div class="svgImg"></div> -->
+    <svg-icon iconClass="housing-bg" wd="700px" hg="800px"/>
   </div>
 </template>
 
 <script>
 // import ld from "lodash";
-import { useDebounce } from "../../hooks/useDebounce";
-import Swiper from "../../components/Swiper";
+// import { useDebounce } from "../../hooks/useDebounce";
+// import Swiper from "../../components/Swiper";
+// import list from "../../components/list";
+// import { Skeleton } from "vant";
 export default {
   name: "page-home",
   data() {
     return {
       val: "0",
       propsName: "",
+      list: [
+        {
+          id: 0,
+          name: "chj",
+          age: 10,
+        },
+        {
+          id: 1,
+          name: "szg",
+          age: 11,
+        },
+        {
+          id: 2,
+          name: "lil",
+          age: 12,
+        },
+      ],
+      loading: true,
     };
   },
   components: {
-    Swiper,
+    // Swiper,
+    // list
+    // Skeleton,
   },
   created() {
-    this._DB = useDebounce(this.handClickBtn);
+    // this._DB = useDebounce(this.handClickBtn);
     // console.log(Boolean(NaN));
     // const n1 = 1; // 小数点后面没有数字，当成整数 1 处理
     // const n2 = 10.0; // 小数点后面是零，当成整数 10 处理
@@ -50,7 +78,6 @@ export default {
     //     console.log("str is not string");
     //   break;
     // }
-
     // function setName(obj) {
     //   obj.name = "nickName";
     //   obj = new Object();
@@ -73,5 +100,20 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less" scoped>
+.svgImg {
+  width: 200px;
+  height: 200px;
+  background: url("../../icons/svg/ordinary-bg.svg") no-repeat center;
+  background-size: contain;
+}
+/deep/ .van-skeleton {
+  flex-direction: column;
+}
+/deep/ .van-skeleton__avatar {
+  width: 400px;
+  height: 400px;
+  // background: pink;
+  border-radius: initial;
+}
 </style>

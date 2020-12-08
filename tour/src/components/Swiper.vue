@@ -22,6 +22,7 @@ export default {
     };
   },
   created() {
+    console.log(this.list);
     this.imgData = useBannerImage("baners");
   },
   computed: {
